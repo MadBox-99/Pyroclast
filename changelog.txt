@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-02-23
+  Features:
+    - Initial standalone release, extracted from LavaBlock mod
+    - Pyroclast planet: hyper-volcanic world with extreme pressure (6000) and gravity (60), reachable from Vulcanus
+    - Sulfuric acid lakes: pumpable natural acid pools on the planet surface
+    - Molten Iron and Molten Copper Geysers with configurable map generation sliders
+    - Minable volcanic rocks (huge and big) yielding stone and ores
+    - Obsidian: volcanic glass mineral extracted from lava under Pyroclast surface conditions
+    - Pyroclast Science Pack: late-game research pack crafted from obsidian, metallurgic science packs, processing units, and lava
+    - Foxhole-style material system:
+      - Bmat (Basic Material): simple structural material from stone and iron
+      - Cmat (Construction Material): reinforced building material
+      - Emat (Explosive Material): volatile compound for military applications
+      - Rmat (Refined Material): high-grade alloy for advanced equipment
+      - Hemat (Heavy Explosive Material): powerful military-grade explosive
+      - Assembly Materials I-IV: tiered vehicle and robotics components
+    - Full technology tree: planet discovery, science pack, materials, explosives, refined materials, heavy explosives, assembly tiers 1-4
+    - Base game recipe modifications: artillery shells, radar, railgun turret, explosive rockets, atomic bomb, nuclear reactor, vehicles, robots use Pyroclast materials
+    - Custom Pyroclast rocket silo for launching from the planet
+    - Works standalone with base + Space Age, or integrates with LavaBlock for extended tech tree

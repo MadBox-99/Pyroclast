@@ -1,0 +1,14 @@
+data:extend({
+    require("prototypes.recipes.pyroclast.obsidian-extraction"),
+    require("prototypes.recipes.pyroclast.pyroclast-science-pack"),
+    require("prototypes.recipes.pyroclast.bmat"),
+    require("prototypes.recipes.pyroclast.cmat"),
+    require("prototypes.recipes.pyroclast.emat"),
+    require("prototypes.recipes.pyroclast.rmat"),
+    require("prototypes.recipes.pyroclast.hemat"),
+    require("prototypes.recipes.pyroclast.assmat1"),
+    require("prototypes.recipes.pyroclast.assmat2"),
+    require("prototypes.recipes.pyroclast.assmat3"),
+    require("prototypes.recipes.pyroclast.assmat4"),
+    require("prototypes.recipes.pyroclast.pyroclast-rocket-silo"),
+})
