@@ -4,6 +4,10 @@
     "title": "Pyroclast",
     "author": "Zoltán Tamás Szabó",
     "factorio_version": "2.0",
-    "dependencies": ["base >= 2.0", "space-age"],
+    "dependencies": [
+        "base >= 2.0",
+        "space-age"
+    ],
+    "space_travel_required": true,
     "description": "Pyroclast: a hyper-volcanic world of extreme pressure and heat. Adds Foxhole-style materials (Bmat, Cmat, Emat, Rmat, Hemat, Assembly Materials) and a full technology tree."
 }
