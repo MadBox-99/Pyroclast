@@ -6,7 +6,7 @@ Date: ????
 Version: 0.1.3
 Date: 2026-02-23
   Changes:
-    -  Now space age is required, as the mod is designed to be played in space age and has dependencies on space age content. This also allows for better integration with space age and ensures players have access to the necessary technology and resources for the mod's features.
+    - Now space age is required, as the mod is designed to be played in space age and has dependencies on space age content. This also allows for better integration with space age and ensures players have access to the necessary technology and resources for the mod's features.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2026-02-23
