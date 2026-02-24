@@ -1,7 +1,19 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
-Date: ????
+Date: 2026-02-24
+  Features:
+    - Added Pyroclast Refinery (7x7, foundry-based). Has +150% built-in productivity, no productivity modules allowed. Speed/quality/efficiency OK. 4 module slots, 3500kW.
+    - Added Mass Production Factory (11x11). Same recipes as the Refinery with +50% built-in productivity for bulk runs. 5 module slots, 1200kW.
+    - Added two new minable resources on Pyroclast: Scrap (common, ash biomes) and Components (rare, ash biomes). Both have map gen sliders.
+    - Added Pyroclast Refinery and MPF technologies.
+    - New custom icons for all materials and buildings.
   Changes:
+    - Reworked the entire material production chain. All recipes moved from chemical plants to the new Pyroclast Refinery/MPF (pyroclast-refining category).
+    - Base materials (bmat, emat, hemat) now require Scrap + lava instead of vanilla items.
+    - Advanced materials (cmat, rmat) now require Components + lava instead of vanilla items.
+    - Hemat uses sulfuric acid (pumped from planet surface) as a unique ingredient.
+    - Pyroclast Scrap is its own resource, not Fulgora's scrap. This prevents players from hand-crafting the scrap-recycling recipe to get free vanilla items.
+    - pyroclast-materials tech now requires pyroclast-refinery tech.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2026-02-24
