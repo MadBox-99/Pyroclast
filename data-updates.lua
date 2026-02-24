@@ -88,7 +88,10 @@ table.insert(data.raw.recipe["artillery-wagon"].ingredients, {
 -- Add pyroclast-assembly prerequisites to base game technologies
 -- Tier 1: car, locomotive
 table.insert(data.raw.technology["automobilism"].prerequisites, "pyroclast-assembly-1")
-table.insert(data.raw.technology["railway"].prerequisites, "pyroclast-assembly-2")
+-- Note: railway cannot require pyroclast-assembly-2 because railway is upstream of
+-- space-science-pack, which planet-discovery-pyroclast needs (creates a cycle).
+-- The cargo-wagon recipe already requires assmat2 as an ingredient, so the material
+-- gate is still enforced without the technology prerequisite.
 
 -- Tier 2: tank
 table.insert(data.raw.technology["tank"].prerequisites, "pyroclast-assembly-2")
