@@ -13,7 +13,7 @@ data:extend({ require("prototypes.tiles.sulfuric-acid-lake") })
 -- Molten-metal geysers (deepcopied from sulfuric-acid-geyser)
 data:extend(require("prototypes.entity.pyroclast-geysers"))
 
--- Ore resources: components (deepcopied from iron-ore); scrap uses Space Age built-in
+-- Ore resources: scrap + components (both deepcopied from Fulgora scrap entity)
 data:extend(require("prototypes.entity.pyroclast-resources"))
 
 -- Pyroclast Rocket Silo (deepcopied from rocket-silo, Pyroclast only)
@@ -41,6 +41,14 @@ data:extend({
         localised_name = {"", "[entity=molten-copper-geyser] ", {"entity-name.molten-copper-geyser"}},
         richness = true,
         order = "f-b",
+        category = "resource"
+    },
+    {
+        type = "autoplace-control",
+        name = "pyroclast_scrap",
+        localised_name = {"", "[entity=pyroclast-scrap] ", {"entity-name.pyroclast-scrap"}},
+        richness = true,
+        order = "f-c",
         category = "resource"
     },
     {

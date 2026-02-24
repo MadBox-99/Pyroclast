@@ -1,6 +1,7 @@
 -- Pyroclast Refinery: processes scrap and components into war materials.
--- Deepcopied from oil-refinery (5x5) and scaled up to 7x7 for an imposing
--- volcanic forge. Only placeable on Pyroclast (surface_conditions).
+-- Deepcopied from the Space Age foundry (5x5) and scaled up to 7x7 for an
+-- imposing volcanic forge. Only placeable on Pyroclast (surface_conditions).
+-- Built-in +150% productivity; productivity modules are NOT allowed.
 
 local SCALE = 7 / 5  -- 1.4x scale factor (5x5 → 7x7)
 
@@ -31,7 +32,7 @@ local function scale_box(box, factor)
     }
 end
 
-local refinery = table.deepcopy(data.raw["assembling-machine"]["oil-refinery"])
+local refinery = table.deepcopy(data.raw["assembling-machine"]["foundry"])
 refinery.name         = "pyroclast-refinery"
 refinery.icons        = {{ icon = "__Pyroclast__/graphics/icons/refinery.png", icon_size = 64 }}
 refinery.icon         = nil
@@ -47,8 +48,15 @@ refinery.surface_conditions = {
 }
 
 refinery.crafting_categories = { "pyroclast-refining" }
-refinery.crafting_speed = 1.5
+refinery.crafting_speed = 4
 refinery.map_color = { r = 0.70, g = 0.35, b = 0.10 }
+
+-- Built-in +150% productivity (like foundry's +50%, but tripled)
+refinery.effect_receiver = { base_effect = { productivity = 1.5 } }
+
+-- Allow speed, efficiency, and quality modules — but NOT productivity
+refinery.allowed_effects = { "consumption", "speed", "pollution", "quality" }
+refinery.module_slots = 4
 
 -- Scale up from 5x5 to 7x7
 refinery.collision_box  = {{ -3.4, -3.4 }, { 3.4, 3.4 }}
@@ -58,8 +66,7 @@ if refinery.drawing_box then
 end
 
 -- Scale fluid box pipe connection positions to match 7x7 footprint.
--- Oil-refinery has 2 inputs (south) and 3 outputs (north).
--- For 7x7: inputs at {-2, 3},{2, 3} and outputs at {-3, -3},{0, -3},{3, -3}
+-- Foundry has 2 inputs (south) and 2 outputs (north).
 if refinery.fluid_boxes then
     for _, box in pairs(refinery.fluid_boxes) do
         if type(box) == "table" and box.pipe_connections then
@@ -79,7 +86,10 @@ end
 scale_graphics(refinery.graphics_set, SCALE)
 scale_graphics(refinery.working_visualisations, SCALE)
 
--- Higher energy for the larger building (oil refinery = 420kW, ours = 600kW)
-refinery.energy_usage = "600kW"
+-- Higher energy for the larger building (foundry = 2500kW, ours = 3500kW)
+refinery.energy_usage = "3500kW"
+
+-- Remove foundry-specific heating requirement (Pyroclast has lava, not cold)
+refinery.heating_energy = nil
 
 data:extend({ refinery })

@@ -1,4 +1,12 @@
--- Note: Scrap uses the Space Age built-in scrap item (from Fulgora).
+local pyroclast_scrap = {
+    type       = "item",
+    name       = "pyroclast-scrap",
+    icon       = "__Pyroclast__/graphics/icons/scrap.png",
+    icon_size  = 64,
+    subgroup   = "raw-resource",
+    order      = "a[pyroclast-scrap]",
+    stack_size = 200,
+}
 
 local pyroclast_components = {
     type       = "item",
@@ -10,4 +18,4 @@ local pyroclast_components = {
     stack_size = 100,
 }
 
-return { pyroclast_components }
+return { pyroclast_scrap, pyroclast_components }

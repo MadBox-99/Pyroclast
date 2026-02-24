@@ -138,19 +138,19 @@ data:extend({
         type = "noise-expression",
         name = "pyroclast_scrap_spots",
         expression = "pyroclast_ore_spot{seed = 61000, count = 4, skip_off = 0,\z
-                                         freq   = control:scrap:frequency,\z
-                                         radius = pyroclast_scrap_spot_size * sqrt(control:scrap:size)}"
+                                         freq   = control:pyroclast_scrap:frequency,\z
+                                         radius = pyroclast_scrap_spot_size * sqrt(control:pyroclast_scrap:size)}"
     },
     {
         type = "noise-expression",
         name = "pyroclast_scrap_prob",
-        expression = "(control:scrap:size > 0)\z
-                      * max(0, pyroclast_scrap_spots) * 0.018"
+        expression = "(control:pyroclast_scrap:size > 0)\z
+                      * max(0, pyroclast_scrap_spots) * 3"
     },
     {
         type = "noise-expression",
         name = "pyroclast_scrap_rich",
-        expression = "max(0, pyroclast_scrap_spots) * 500000 * control:scrap:richness"
+        expression = "max(0, pyroclast_scrap_spots) * 500000 * control:pyroclast_scrap:richness"
     },
     -- Components: rare ore (skip_off=1, different seed → no overlap with scrap)
     {
@@ -164,7 +164,7 @@ data:extend({
         type = "noise-expression",
         name = "pyroclast_components_prob",
         expression = "(control:pyroclast_components:size > 0)\z
-                      * max(0, pyroclast_components_spots) * 0.010"
+                      * max(0, pyroclast_components_spots) * 2"
     },
     {
         type = "noise-expression",

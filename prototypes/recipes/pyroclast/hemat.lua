@@ -9,7 +9,7 @@ return {
         { property = "gravity",  min = 60,   max = 60   },
     },
     ingredients = {
-        { type = "item",  name = "scrap", amount = 10  },
+        { type = "item",  name = "pyroclast-scrap", amount = 10  },
         { type = "fluid", name = "sulfuric-acid",   amount = 100 },
         { type = "fluid", name = "lava",            amount = 500 },
     },

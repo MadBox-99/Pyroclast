@@ -56,16 +56,15 @@ data:extend({
                 -- Override the Vulcanus-specific rock expressions with Pyroclast versions
                 ["entity:huge-volcanic-rock:probability"] = "pyroclast_rock_huge",
                 ["entity:big-volcanic-rock:probability"]  = "pyroclast_rock_big",
-                -- Molten-metal geysers (entity autoplace = 0 by default, overridden here)
+                -- Molten-metal geysers
                 ["entity:molten-iron-geyser:probability"]    = "pyroclast_iron_geyser_prob",
                 ["entity:molten-iron-geyser:richness"]       = "pyroclast_iron_geyser_rich",
                 ["entity:molten-copper-geyser:probability"]  = "pyroclast_copper_geyser_prob",
                 ["entity:molten-copper-geyser:richness"]     = "pyroclast_copper_geyser_rich",
-                -- Ore resources: scrap (Space Age built-in) + components; overridden here
-                ["entity:scrap:probability"]                 = "pyroclast_scrap_prob",
-                ["entity:scrap:richness"]                    = "pyroclast_scrap_rich",
-                ["entity:pyroclast-components:probability"]  = "pyroclast_components_prob",
-                ["entity:pyroclast-components:richness"]     = "pyroclast_components_rich",
+                -- Pyroclast scrap ore (custom entity, not Fulgora's scrap)
+                ["entity:pyroclast-scrap:probability"]       = "pyroclast_scrap_prob",
+                ["entity:pyroclast-scrap:richness"]          = "pyroclast_scrap_rich",
+                -- Components uses resource_autoplace (like iron-ore), no override needed
             },
             cliff_settings = {
                 -- Less smoothing = more jagged, dramatic volcanic cliffs
@@ -88,7 +87,7 @@ data:extend({
                 -- Pyroclast-specific geyser controls (map-gen sliders)
                 ["pyroclast_iron_geyser"]   = {},
                 ["pyroclast_copper_geyser"] = {},
-                ["scrap"]                   = {},
+                ["pyroclast_scrap"]         = {},
                 ["pyroclast_components"]    = {},
             },
             default_enable_all_autoplace_controls = false,
@@ -118,7 +117,7 @@ data:extend({
                         ["molten-iron-geyser"]   = {},
                         ["molten-copper-geyser"] = {},
                         -- Ore resources (mined by electric mining drills)
-                        ["scrap"]                = {},
+                        ["pyroclast-scrap"]      = {},
                         ["pyroclast-components"] = {},
                     }
                 },

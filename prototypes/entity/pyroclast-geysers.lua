@@ -48,7 +48,7 @@ molten_iron_geyser.minable   = {
         { type = "fluid", name = "molten-iron", amount_min = 10, amount_max = 10, probability = 1 }
     }
 }
-molten_iron_geyser.autoplace = { order = "c", probability_expression = 0 }
+molten_iron_geyser.autoplace = { control = "pyroclast_iron_geyser", order = "c", probability_expression = 0 }
 tint_geyser(molten_iron_geyser, iron_tint)
 
 local molten_copper_geyser = table.deepcopy(base)
@@ -63,7 +63,7 @@ molten_copper_geyser.minable   = {
         { type = "fluid", name = "molten-copper", amount_min = 10, amount_max = 10, probability = 1 }
     }
 }
-molten_copper_geyser.autoplace = { order = "c", probability_expression = 0 }
+molten_copper_geyser.autoplace = { control = "pyroclast_copper_geyser", order = "c", probability_expression = 0 }
 tint_geyser(molten_copper_geyser, copper_tint)
 
 return { molten_iron_geyser, molten_copper_geyser }
