@@ -1,7 +1,7 @@
 return {
     type = "recipe",
     name = "assmat3",
-    category = "chemistry",
+    category = "pyroclast-refining",
     enabled = false,
     energy_required = 15,
     surface_conditions = {

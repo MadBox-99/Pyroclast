@@ -11,4 +11,5 @@ data:extend({
     require("prototypes.recipes.pyroclast.assmat3"),
     require("prototypes.recipes.pyroclast.assmat4"),
     require("prototypes.recipes.pyroclast.pyroclast-rocket-silo"),
+    require("prototypes.recipes.pyroclast.pyroclast-refinery"),
 })

@@ -1,7 +1,7 @@
 return {
     type = "recipe",
     name = "emat",
-    category = "chemistry",
+    category = "pyroclast-refining",
     enabled = false,
     energy_required = 10,
     surface_conditions = {
@@ -9,9 +9,8 @@ return {
         { property = "gravity",  min = 60,   max = 60   },
     },
     ingredients = {
-        { type = "item",  name = "sulfur", amount = 3 },
-        { type = "item",  name = "coal",   amount = 5 },
-        { type = "fluid", name = "lava",   amount = 150 },
+        { type = "item",  name = "pyroclast-scrap", amount = 12  },
+        { type = "fluid", name = "lava",            amount = 200 },
     },
     results = {
         { type = "item", name = "emat", amount = 5 },

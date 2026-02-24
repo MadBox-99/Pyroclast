@@ -1,5 +1,6 @@
 local planet_discovery_pyroclast  = require("prototypes.technologies.planet-discovery-pyroclast")
 local pyroclast_science_pack_tech = require("prototypes.technologies.pyroclast-science-pack")
+local pyroclast_refinery_tech    = require("prototypes.technologies.pyroclast-refinery")
 local pyroclast_materials_tech    = require("prototypes.technologies.pyroclast-materials")
 local pyroclast_explosives_tech   = require("prototypes.technologies.pyroclast-explosives")
 local pyroclast_refined_tech      = require("prototypes.technologies.pyroclast-refined")
@@ -12,6 +13,7 @@ local pyroclast_assembly_4_tech   = require("prototypes.technologies.pyroclast-a
 data:extend({
     planet_discovery_pyroclast,
     pyroclast_science_pack_tech,
+    pyroclast_refinery_tech,
     pyroclast_materials_tech,
     pyroclast_explosives_tech,
     pyroclast_refined_tech,

@@ -21,7 +21,7 @@ return {
         { type = "unlock-recipe", recipe = "bmat" },
         { type = "unlock-recipe", recipe = "cmat" },
     },
-    prerequisites = { "planet-discovery-pyroclast" },
+    prerequisites = { "pyroclast-refinery" },
     unit = {
         count = 300,
         ingredients = {

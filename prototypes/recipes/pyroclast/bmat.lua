@@ -1,7 +1,7 @@
 return {
     type = "recipe",
     name = "bmat",
-    category = "chemistry",
+    category = "pyroclast-refining",
     enabled = false,
     energy_required = 5,
     surface_conditions = {
@@ -9,12 +9,11 @@ return {
         { property = "gravity",  min = 60,   max = 60   }
     },
     ingredients = {
-        { type = "item",  name = "iron-plate", amount = 5 },
-        { type = "item",  name = "stone",      amount = 5 },
-        { type = "fluid", name = "lava",       amount = 200 },
+        { type = "item",  name = "pyroclast-scrap", amount = 8   },
+        { type = "fluid", name = "lava",            amount = 300 },
     },
     results = {
-        { type = "item", name = "bmat", amount = 10 },
+        { type = "item", name = "bmat", amount = 8 },
     },
     icons = {
         {

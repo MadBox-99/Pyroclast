@@ -99,6 +99,78 @@ data:extend({
         name = "pyroclast_copper_geyser_rich",
         expression = "max(0, pyroclast_copper_geyser_spots) * 300000 * control:pyroclast_copper_geyser:richness"
     },
+    -- ── Ore resources (scrap + components) ──────────────────────────────────
+    -- Ores spawn in ASH biomes (high aux), geysers in ROCKY biomes (low aux).
+    -- This creates natural spatial separation on the planet surface.
+    {
+        type = "noise-expression",
+        name = "pyroclast_scrap_spot_size",
+        -- Large common patches: radius 35 → area ~3850 tiles per patch at size=1
+        expression = 35
+    },
+    {
+        type = "noise-expression",
+        name = "pyroclast_components_spot_size",
+        -- Smaller rare patches: radius 18 → area ~1018 tiles per patch at size=1
+        expression = 18
+    },
+    {
+        -- Helper: like pyroclast_geyser_spot but favours ash biomes (aux > 0.45).
+        type = "noise-function",
+        name = "pyroclast_ore_spot",
+        parameters = {"seed", "count", "skip_off", "freq", "radius"},
+        expression = "spot_noise{x = x, y = y,\z
+                                 seed0 = map_seed, seed1 = seed,\z
+                                 candidate_spot_count = count,\z
+                                 suggested_minimum_candidate_point_spacing = 200,\z
+                                 skip_span = 3, skip_offset = skip_off,\z
+                                 region_size = 400 + 300 / freq,\z
+                                 density_expression = 1,\z
+                                 spot_quantity_expression = radius * radius,\z
+                                 spot_radius_expression = radius,\z
+                                 hard_region_target_quantity = 0,\z
+                                 spot_favorability_expression = clamp(aux - 0.45, 0, 0.55) * (1 / 0.55),\z
+                                 basement_value = -1,\z
+                                 maximum_spot_basement_radius = radius * 2}"
+    },
+    -- Scrap: common ore (skip_off=0 from span=3 → denser candidate set)
+    {
+        type = "noise-expression",
+        name = "pyroclast_scrap_spots",
+        expression = "pyroclast_ore_spot{seed = 61000, count = 4, skip_off = 0,\z
+                                         freq   = control:pyroclast_scrap:frequency,\z
+                                         radius = pyroclast_scrap_spot_size * sqrt(control:pyroclast_scrap:size)}"
+    },
+    {
+        type = "noise-expression",
+        name = "pyroclast_scrap_prob",
+        expression = "(control:pyroclast_scrap:size > 0)\z
+                      * max(0, pyroclast_scrap_spots) * 0.018"
+    },
+    {
+        type = "noise-expression",
+        name = "pyroclast_scrap_rich",
+        expression = "max(0, pyroclast_scrap_spots) * 500000 * control:pyroclast_scrap:richness"
+    },
+    -- Components: rare ore (skip_off=1, different seed → no overlap with scrap)
+    {
+        type = "noise-expression",
+        name = "pyroclast_components_spots",
+        expression = "pyroclast_ore_spot{seed = 83000, count = 4, skip_off = 1,\z
+                                         freq   = control:pyroclast_components:frequency,\z
+                                         radius = pyroclast_components_spot_size * sqrt(control:pyroclast_components:size)}"
+    },
+    {
+        type = "noise-expression",
+        name = "pyroclast_components_prob",
+        expression = "(control:pyroclast_components:size > 0)\z
+                      * max(0, pyroclast_components_spots) * 0.010"
+    },
+    {
+        type = "noise-expression",
+        name = "pyroclast_components_rich",
+        expression = "max(0, pyroclast_components_spots) * 350000 * control:pyroclast_components:richness"
+    },
     {
         -- Biome variation noise: low=rocky, high=ashy (0 to 1)
         type = "noise-expression",

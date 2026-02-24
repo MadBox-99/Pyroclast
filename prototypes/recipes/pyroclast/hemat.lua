@@ -1,7 +1,7 @@
 return {
     type = "recipe",
     name = "hemat",
-    category = "chemistry",
+    category = "pyroclast-refining",
     enabled = false,
     energy_required = 15,
     surface_conditions = {
@@ -9,9 +9,9 @@ return {
         { property = "gravity",  min = 60,   max = 60   },
     },
     ingredients = {
-        { type = "item",  name = "emat", amount = 5 },
-        { type = "item",  name = "rmat", amount = 5 },
-        { type = "fluid", name = "lava", amount = 500 },
+        { type = "item",  name = "pyroclast-scrap", amount = 10  },
+        { type = "fluid", name = "sulfuric-acid",   amount = 100 },
+        { type = "fluid", name = "lava",            amount = 500 },
     },
     results = {
         { type = "item", name = "hemat", amount = 3 },
@@ -23,11 +23,10 @@ return {
             tint = { r = 0.7, g = 0.15, b = 0.15, a = 1 },
         },
         {
-            icon = "__base__/graphics/icons/explosives.png",
+            icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
             icon_size = 64,
             scale = 0.25,
             shift = { -8, -8 },
-            tint = { r = 0.9, g = 0.4, b = 0.2, a = 1 },
         },
     },
     allow_productivity = true,
