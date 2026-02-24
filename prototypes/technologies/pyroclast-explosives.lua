@@ -3,9 +3,8 @@ return {
     name = "pyroclast-explosives",
     icons = {
         {
-            icon = "__base__/graphics/icons/explosives.png",
+            icon = "__Pyroclast__/graphics/icons/emat.png",
             icon_size = 64,
-            tint = { r = 0.9, g = 0.4, b = 0.2, a = 1 },
             scale = 2,
         },
     },

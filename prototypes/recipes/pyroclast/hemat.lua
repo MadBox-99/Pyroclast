@@ -9,7 +9,7 @@ return {
         { property = "gravity",  min = 60,   max = 60   },
     },
     ingredients = {
-        { type = "item",  name = "pyroclast-scrap", amount = 10  },
+        { type = "item",  name = "scrap", amount = 10  },
         { type = "fluid", name = "sulfuric-acid",   amount = 100 },
         { type = "fluid", name = "lava",            amount = 500 },
     },
@@ -18,9 +18,8 @@ return {
     },
     icons = {
         {
-            icon = "__space-age__/graphics/icons/carbon.png",
+            icon = "__Pyroclast__/graphics/icons/hemat.png",
             icon_size = 64,
-            tint = { r = 0.7, g = 0.15, b = 0.15, a = 1 },
         },
         {
             icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",

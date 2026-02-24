@@ -14,8 +14,8 @@ data:extend({
     pyroclast_assembly[2],    -- assmat2
     pyroclast_assembly[3],    -- assmat3
     pyroclast_assembly[4],    -- assmat4
-    pyroclast_resources[1],   -- pyroclast-scrap
-    pyroclast_resources[2],   -- pyroclast-components
+    pyroclast_resources[1],   -- pyroclast-components
     require("prototypes.items.pyroclast-rocket-silo"),
     require("prototypes.items.pyroclast-refinery"),
+    require("prototypes.items.pyroclast-mpf"),
 })

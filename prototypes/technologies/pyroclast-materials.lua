@@ -3,16 +3,14 @@ return {
     name = "pyroclast-materials",
     icons = {
         {
-            icon = "__base__/graphics/icons/iron-plate.png",
+            icon = "__Pyroclast__/graphics/icons/bmat.png",
             icon_size = 64,
-            tint = { r = 0.5, g = 0.55, b = 0.3, a = 1 },
             scale = 2,
             shift = { -16, 0 },
         },
         {
-            icon = "__base__/graphics/icons/steel-plate.png",
+            icon = "__Pyroclast__/graphics/icons/cmat.png",
             icon_size = 64,
-            tint = { r = 0.35, g = 0.4, b = 0.3, a = 1 },
             scale = 2,
             shift = { 16, 0 },
         },

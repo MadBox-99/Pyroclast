@@ -13,14 +13,17 @@ data:extend({ require("prototypes.tiles.sulfuric-acid-lake") })
 -- Molten-metal geysers (deepcopied from sulfuric-acid-geyser)
 data:extend(require("prototypes.entity.pyroclast-geysers"))
 
--- Ore resources: scrap and components (deepcopied from iron-ore)
+-- Ore resources: components (deepcopied from iron-ore); scrap uses Space Age built-in
 data:extend(require("prototypes.entity.pyroclast-resources"))
 
 -- Pyroclast Rocket Silo (deepcopied from rocket-silo, Pyroclast only)
 require("prototypes.entity.pyroclast-rocket-silo")
 
--- Pyroclast Refinery (deepcopied from chemical-plant, Pyroclast only)
+-- Pyroclast Refinery (deepcopied from oil-refinery, scaled to 7x7, Pyroclast only)
 require("prototypes.entity.pyroclast-refinery")
+
+-- Pyroclast Mass Production Factory (deepcopied from oil-refinery, scaled to 11x11)
+require("prototypes.entity.pyroclast-mpf")
 
 -- Autoplace-control entries give resources sliders in the map generation UI.
 data:extend({
@@ -38,14 +41,6 @@ data:extend({
         localised_name = {"", "[entity=molten-copper-geyser] ", {"entity-name.molten-copper-geyser"}},
         richness = true,
         order = "f-b",
-        category = "resource"
-    },
-    {
-        type = "autoplace-control",
-        name = "pyroclast_scrap",
-        localised_name = {"", "[entity=pyroclast-scrap] ", {"entity-name.pyroclast-scrap"}},
-        richness = true,
-        order = "f-c",
         category = "resource"
     },
     {

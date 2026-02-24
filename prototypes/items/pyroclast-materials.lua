@@ -1,13 +1,8 @@
 local bmat = {
     type = "item",
     name = "bmat",
-    icons = {
-        {
-            icon = "__base__/graphics/icons/iron-plate.png",
-            icon_size = 64,
-            tint = { r = 0.5, g = 0.55, b = 0.3, a = 1 }
-        }
-    },
+    icon = "__Pyroclast__/graphics/icons/bmat.png",
+    icon_size = 64,
     subgroup = "raw-material",
     order = "c[bmat]",
     stack_size = 100
@@ -16,13 +11,8 @@ local bmat = {
 local cmat = {
     type = "item",
     name = "cmat",
-    icons = {
-        {
-            icon = "__base__/graphics/icons/steel-plate.png",
-            icon_size = 64,
-            tint = { r = 0.35, g = 0.4, b = 0.3, a = 1 }
-        }
-    },
+    icon = "__Pyroclast__/graphics/icons/cmat.png",
+    icon_size = 64,
     subgroup = "raw-material",
     order = "c[cmat]",
     stack_size = 100
@@ -31,13 +21,8 @@ local cmat = {
 local emat = {
     type = "item",
     name = "emat",
-    icons = {
-        {
-            icon = "__base__/graphics/icons/explosives.png",
-            icon_size = 64,
-            tint = { r = 0.9, g = 0.4, b = 0.2, a = 1 }
-        }
-    },
+    icon = "__Pyroclast__/graphics/icons/emat.png",
+    icon_size = 64,
     subgroup = "raw-material",
     order = "c[emat]",
     stack_size = 100
@@ -46,13 +31,8 @@ local emat = {
 local rmat = {
     type = "item",
     name = "rmat",
-    icons = {
-        {
-            icon = "__base__/graphics/icons/copper-plate.png",
-            icon_size = 64,
-            tint = { r = 0.3, g = 0.4, b = 0.7, a = 1 }
-        }
-    },
+    icon = "__Pyroclast__/graphics/icons/rmat.png",
+    icon_size = 64,
     subgroup = "raw-material",
     order = "c[rmat]",
     stack_size = 100
@@ -61,13 +41,8 @@ local rmat = {
 local hemat = {
     type = "item",
     name = "hemat",
-    icons = {
-        {
-            icon = "__space-age__/graphics/icons/carbon.png",
-            icon_size = 64,
-            tint = { r = 0.7, g = 0.15, b = 0.15, a = 1 }
-        }
-    },
+    icon = "__Pyroclast__/graphics/icons/hemat.png",
+    icon_size = 64,
     subgroup = "raw-material",
     order = "c[hemat]",
     stack_size = 50

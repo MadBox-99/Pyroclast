@@ -17,9 +17,8 @@ return {
     },
     icons = {
         {
-            icon = "__base__/graphics/icons/copper-plate.png",
+            icon = "__Pyroclast__/graphics/icons/rmat.png",
             icon_size = 64,
-            tint = { r = 0.3, g = 0.4, b = 0.7, a = 1 },
         },
         {
             icon = "__space-age__/graphics/icons/fluid/lava.png",

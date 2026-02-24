@@ -9,7 +9,7 @@ return {
         { property = "gravity",  min = 60,   max = 60   }
     },
     ingredients = {
-        { type = "item",  name = "pyroclast-scrap", amount = 8   },
+        { type = "item",  name = "scrap", amount = 8   },
         { type = "fluid", name = "lava",            amount = 300 },
     },
     results = {
@@ -17,9 +17,8 @@ return {
     },
     icons = {
         {
-            icon = "__base__/graphics/icons/iron-plate.png",
+            icon = "__Pyroclast__/graphics/icons/bmat.png",
             icon_size = 64,
-            tint = { r = 0.5, g = 0.55, b = 0.3, a = 1 }
         },
         {
             icon = "__space-age__/graphics/icons/fluid/lava.png",

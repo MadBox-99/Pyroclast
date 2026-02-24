@@ -61,9 +61,9 @@ data:extend({
                 ["entity:molten-iron-geyser:richness"]       = "pyroclast_iron_geyser_rich",
                 ["entity:molten-copper-geyser:probability"]  = "pyroclast_copper_geyser_prob",
                 ["entity:molten-copper-geyser:richness"]     = "pyroclast_copper_geyser_rich",
-                -- Ore resources (scrap + components); entities default to prob=0, overridden here
-                ["entity:pyroclast-scrap:probability"]       = "pyroclast_scrap_prob",
-                ["entity:pyroclast-scrap:richness"]          = "pyroclast_scrap_rich",
+                -- Ore resources: scrap (Space Age built-in) + components; overridden here
+                ["entity:scrap:probability"]                 = "pyroclast_scrap_prob",
+                ["entity:scrap:richness"]                    = "pyroclast_scrap_rich",
                 ["entity:pyroclast-components:probability"]  = "pyroclast_components_prob",
                 ["entity:pyroclast-components:richness"]     = "pyroclast_components_rich",
             },
@@ -88,7 +88,7 @@ data:extend({
                 -- Pyroclast-specific geyser controls (map-gen sliders)
                 ["pyroclast_iron_geyser"]   = {},
                 ["pyroclast_copper_geyser"] = {},
-                ["pyroclast_scrap"]         = {},
+                ["scrap"]                   = {},
                 ["pyroclast_components"]    = {},
             },
             default_enable_all_autoplace_controls = false,
@@ -118,7 +118,7 @@ data:extend({
                         ["molten-iron-geyser"]   = {},
                         ["molten-copper-geyser"] = {},
                         -- Ore resources (mined by electric mining drills)
-                        ["pyroclast-scrap"]      = {},
+                        ["scrap"]                = {},
                         ["pyroclast-components"] = {},
                     }
                 },

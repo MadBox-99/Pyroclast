@@ -17,19 +17,31 @@ end
 
 local base = data.raw.resource["sulfuric-acid-geyser"]
 
--- Molten iron: grey-orange glow matching the fluid's flow_color {0.2, 0.68, 0.93}
--- (uses a warm orange tint so the smoke reads as superheated metal vapour)
-local iron_smoke_tint   = { r = 0.85, g = 0.55, b = 0.20, a = 0.6 }
+-- Molten iron: blue-grey matching the molten-iron fluid color {0.2, 0.68, 0.93}
+local iron_tint = { r = 0.30, g = 0.65, b = 0.90, a = 0.8 }
 
--- Molten copper: copper-orange matching flow_color {0.93, 0.68, 0.2}
-local copper_smoke_tint = { r = 0.90, g = 0.45, b = 0.10, a = 0.6 }
+-- Molten copper: distinctive copper-orange
+local copper_tint = { r = 0.90, g = 0.45, b = 0.10, a = 0.8 }
+
+-- Helper: apply tint to ALL visual fields of a geyser entity
+local function tint_geyser(geyser, tint)
+    if geyser.stateless_visualisation then
+        tint_all_animations(geyser.stateless_visualisation, tint)
+    end
+    if geyser.stages then
+        tint_all_animations(geyser.stages, tint)
+    end
+    if geyser.stages_effect then
+        tint_all_animations(geyser.stages_effect, tint)
+    end
+end
 
 local molten_iron_geyser = table.deepcopy(base)
 molten_iron_geyser.name      = "molten-iron-geyser"
 molten_iron_geyser.icon      = "__space-age__/graphics/icons/fluid/molten-iron.png"
 molten_iron_geyser.icon_size = 64
 molten_iron_geyser.order     = "e"
-molten_iron_geyser.map_color = { r = 0.55, g = 0.60, b = 0.70 }  -- blue-grey on minimap
+molten_iron_geyser.map_color = { r = 0.55, g = 0.60, b = 0.70 }
 molten_iron_geyser.minable   = {
     mining_time = 1,
     results = {
@@ -37,16 +49,14 @@ molten_iron_geyser.minable   = {
     }
 }
 molten_iron_geyser.autoplace = { order = "c", probability_expression = 0 }
-if molten_iron_geyser.stateless_visualisation then
-    tint_all_animations(molten_iron_geyser.stateless_visualisation, iron_smoke_tint)
-end
+tint_geyser(molten_iron_geyser, iron_tint)
 
 local molten_copper_geyser = table.deepcopy(base)
 molten_copper_geyser.name      = "molten-copper-geyser"
 molten_copper_geyser.icon      = "__space-age__/graphics/icons/fluid/molten-copper.png"
 molten_copper_geyser.icon_size = 64
 molten_copper_geyser.order     = "f"
-molten_copper_geyser.map_color = { r = 0.85, g = 0.45, b = 0.10 }  -- copper-orange on minimap
+molten_copper_geyser.map_color = { r = 0.85, g = 0.45, b = 0.10 }
 molten_copper_geyser.minable   = {
     mining_time = 1,
     results = {
@@ -54,8 +64,6 @@ molten_copper_geyser.minable   = {
     }
 }
 molten_copper_geyser.autoplace = { order = "c", probability_expression = 0 }
-if molten_copper_geyser.stateless_visualisation then
-    tint_all_animations(molten_copper_geyser.stateless_visualisation, copper_smoke_tint)
-end
+tint_geyser(molten_copper_geyser, copper_tint)
 
 return { molten_iron_geyser, molten_copper_geyser }

@@ -3,9 +3,8 @@ return {
     name = "pyroclast-assembly-1",
     icons = {
         {
-            icon = "__base__/graphics/icons/iron-gear-wheel.png",
+            icon = "__Pyroclast__/graphics/icons/assmat1.png",
             icon_size = 64,
-            tint = { r = 0.6, g = 0.8, b = 0.4, a = 1 },
             scale = 2,
         },
     },
