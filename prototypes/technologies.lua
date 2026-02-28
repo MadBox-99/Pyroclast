@@ -10,6 +10,8 @@ local pyroclast_assembly_2_tech   = require("prototypes.technologies.pyroclast-a
 local pyroclast_assembly_3_tech   = require("prototypes.technologies.pyroclast-assembly-3")
 local pyroclast_assembly_4_tech   = require("prototypes.technologies.pyroclast-assembly-4")
 local pyroclast_mpf_tech          = require("prototypes.technologies.pyroclast-mpf")
+local pyroclast_coal_gen_tech     = require("prototypes.technologies.pyroclast-coal-generator")
+local pyroclast_ammo_fac_tech     = require("prototypes.technologies.pyroclast-ammo-facility")
 
 data:extend({
     planet_discovery_pyroclast,
@@ -24,4 +26,6 @@ data:extend({
     pyroclast_assembly_3_tech,
     pyroclast_assembly_4_tech,
     pyroclast_mpf_tech,
+    pyroclast_coal_gen_tech,
+    pyroclast_ammo_fac_tech,
 })

@@ -25,6 +25,12 @@ require("prototypes.entity.pyroclast-refinery")
 -- Pyroclast Mass Production Factory (deepcopied from oil-refinery, scaled to 11x11)
 require("prototypes.entity.pyroclast-mpf")
 
+-- Pyroclast Coal Generator (deepcopied from steam-engine, scaled to 7x7)
+require("prototypes.entity.pyroclast-coal-generator")
+
+-- Pyroclast Ammo Facility (deepcopied from assembling-machine-3, scaled to 7x7)
+require("prototypes.entity.pyroclast-ammo-facility")
+
 -- Autoplace-control entries give resources sliders in the map generation UI.
 data:extend({
     {

@@ -5,21 +5,6 @@
 
 local SCALE = 11 / 5  -- 2.2x scale factor (5x5 → 11x11)
 
--- Recursively scale all sprite `scale` values and `shift` vectors in a table.
-local function scale_graphics(node, factor)
-    if type(node) ~= "table" then return end
-    if node.scale then
-        node.scale = node.scale * factor
-    end
-    if node.shift and type(node.shift) == "table" and #node.shift == 2 then
-        node.shift = { node.shift[1] * factor, node.shift[2] * factor }
-    end
-    for k, v in pairs(node) do
-        if type(v) == "table" and k ~= "shift" then
-            scale_graphics(v, factor)
-        end
-    end
-end
 
 local mpf = table.deepcopy(data.raw["assembling-machine"]["oil-refinery"])
 mpf.name         = "pyroclast-mpf"
@@ -67,9 +52,29 @@ if mpf.fluid_boxes then
     end
 end
 
--- Scale all graphics to fit 11x11
-scale_graphics(mpf.graphics_set, SCALE)
-scale_graphics(mpf.working_visualisations, SCALE)
+-- Custom rendered graphics (replaces scaled oil-refinery sprites)
+local function mpf_sprite(direction)
+    return {
+        filename = "__Pyroclast__/graphics/entity/mpf/mpf-" .. direction .. ".png",
+        width = 384,
+        height = 384,
+        frame_count = 1,
+        line_length = 1,
+        shift = util.by_pixel(0, 0),
+        scale = 1.0,
+        priority = "high",
+    }
+end
+
+mpf.graphics_set = {
+    animation = {
+        north = mpf_sprite("north"),
+        east  = mpf_sprite("east"),
+        south = mpf_sprite("south"),
+        west  = mpf_sprite("west"),
+    },
+}
+mpf.working_visualisations = nil
 
 -- High energy for the massive building
 mpf.energy_usage = "1200kW"

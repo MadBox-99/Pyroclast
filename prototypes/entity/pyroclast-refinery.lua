@@ -3,35 +3,6 @@
 -- imposing volcanic forge. Only placeable on Pyroclast (surface_conditions).
 -- Built-in +150% productivity; productivity modules are NOT allowed.
 
-local SCALE = 7 / 5  -- 1.4x scale factor (5x5 → 7x7)
-
--- Recursively scale all sprite `scale` values and `shift` vectors in a table.
-local function scale_graphics(node, factor)
-    if type(node) ~= "table" then return end
-    -- Scale the `scale` property if it exists
-    if node.scale then
-        node.scale = node.scale * factor
-    end
-    -- Scale `shift` if present (2-element array: {x, y})
-    if node.shift and type(node.shift) == "table" and #node.shift == 2 then
-        node.shift = { node.shift[1] * factor, node.shift[2] * factor }
-    end
-    -- Recurse into sub-tables (layers, animations, etc.)
-    for k, v in pairs(node) do
-        if type(v) == "table" and k ~= "shift" then
-            scale_graphics(v, factor)
-        end
-    end
-end
-
--- Scale a bounding box {{x1,y1},{x2,y2}} by a factor
-local function scale_box(box, factor)
-    return {
-        { box[1][1] * factor, box[1][2] * factor },
-        { box[2][1] * factor, box[2][2] * factor },
-    }
-end
-
 local refinery = table.deepcopy(data.raw["assembling-machine"]["foundry"])
 refinery.name         = "pyroclast-refinery"
 refinery.icons        = {{ icon = "__Pyroclast__/graphics/icons/refinery.png", icon_size = 64 }}
@@ -61,30 +32,70 @@ refinery.module_slots = 4
 -- Scale up from 5x5 to 7x7
 refinery.collision_box  = {{ -3.4, -3.4 }, { 3.4, 3.4 }}
 refinery.selection_box  = {{ -3.5, -3.5 }, { 3.5, 3.5 }}
-if refinery.drawing_box then
-    refinery.drawing_box = scale_box(refinery.drawing_box, SCALE)
+refinery.drawing_box    = {{ -4.0, -4.5 }, { 4.0, 3.5 }}
+
+-- Always show pipe connections (and allow rotation) even without a fluid recipe
+refinery.fluid_boxes_off_when_no_fluid_recipe = false
+
+-- Replace fluid_boxes entirely to remove all working visualisation references.
+-- Foundry has 2 inputs (south) + 2 outputs (north); we keep the same layout
+-- with positions scaled to fit our 7x7 footprint.
+refinery.fluid_boxes = {
+    {
+        production_type = "input",
+        volume = 1000,
+        pipe_connections = {
+            { flow_direction = "input", direction = defines.direction.south, position = { -1, 3 } },
+        },
+    },
+    {
+        production_type = "input",
+        volume = 1000,
+        pipe_connections = {
+            { flow_direction = "input", direction = defines.direction.south, position = { 1, 3 } },
+        },
+    },
+    {
+        production_type = "output",
+        volume = 100,
+        pipe_connections = {
+            { flow_direction = "output", direction = defines.direction.north, position = { -1, -3 } },
+        },
+    },
+    {
+        production_type = "output",
+        volume = 100,
+        pipe_connections = {
+            { flow_direction = "output", direction = defines.direction.north, position = { 1, -3 } },
+        },
+    },
+}
+
+-- Custom rendered graphics (replaces foundry sprites)
+local function refinery_sprite(direction)
+    return {
+        filename = "__Pyroclast__/graphics/entity/refinery/refinery-" .. direction .. ".png",
+        width = 384,
+        height = 384,
+        frame_count = 1,
+        line_length = 1,
+        shift = util.by_pixel(0, -16),
+        scale = 0.74,
+        priority = "high",
+    }
 end
 
--- Scale fluid box pipe connection positions to match 7x7 footprint.
--- Foundry has 2 inputs (south) and 2 outputs (north).
-if refinery.fluid_boxes then
-    for _, box in pairs(refinery.fluid_boxes) do
-        if type(box) == "table" and box.pipe_connections then
-            for _, conn in pairs(box.pipe_connections) do
-                if conn.position then
-                    conn.position = {
-                        conn.position[1] * SCALE,
-                        conn.position[2] * SCALE,
-                    }
-                end
-            end
-        end
-    end
-end
+refinery.graphics_set = {
+    animation = {
+        north = refinery_sprite("north"),
+        east  = refinery_sprite("west"),
+        south = refinery_sprite("south"),
+        west  = refinery_sprite("east"),
+    },
+}
 
--- Scale all graphics (animations, working_visualisations, etc.) to fit 7x7
-scale_graphics(refinery.graphics_set, SCALE)
-scale_graphics(refinery.working_visualisations, SCALE)
+-- Remove all working visualisations (we use simple static sprites)
+refinery.working_visualisations = nil
 
 -- Higher energy for the larger building (foundry = 2500kW, ours = 3500kW)
 refinery.energy_usage = "3500kW"

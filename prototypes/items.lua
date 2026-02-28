@@ -19,4 +19,6 @@ data:extend({
     require("prototypes.items.pyroclast-rocket-silo"),
     require("prototypes.items.pyroclast-refinery"),
     require("prototypes.items.pyroclast-mpf"),
+    require("prototypes.items.pyroclast-coal-generator"),
+    require("prototypes.items.pyroclast-ammo-facility"),
 })
