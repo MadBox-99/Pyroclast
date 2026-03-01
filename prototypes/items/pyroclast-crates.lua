@@ -1,5 +1,8 @@
 -- Crated versions of Pyroclast materials for efficient inter-planetary transport.
--- Each crate holds a full stack of the base material, 5x transport density.
+-- Each crate holds a full stack of the base material.
+-- Explicit weight set to 2kg per crate (rocket capacity = 1000kg).
+-- Loose materials auto-calculate to ~1-2kg each, so a crate of 100 items
+-- at 2kg total gives massive transport density improvement.
 
 local materials = {
     { name = "bmat",    amount = 100 },
@@ -24,7 +27,8 @@ for _, mat in pairs(materials) do
         },
         subgroup = "raw-material",
         order = "d[crated-" .. mat.name .. "]",
-        stack_size = 5,
+        stack_size = 50,
+        weight = 2 * kg,
     })
 end
 
