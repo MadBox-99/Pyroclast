@@ -48,4 +48,4 @@ local pyroclast_science_pack = {
     subgroup = "science-pack",
     weight = 1000
 }
-return pyroclast_science_pack
+data:extend({ pyroclast_science_pack })

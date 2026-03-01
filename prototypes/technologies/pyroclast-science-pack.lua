@@ -29,4 +29,4 @@ local pyroclast_science_pack_technology = {
     },
     order = "c-a-e[pyroclast-science-pack]"
 }
-return pyroclast_science_pack_technology
+data:extend({ pyroclast_science_pack_technology })

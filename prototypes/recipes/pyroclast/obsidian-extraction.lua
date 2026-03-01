@@ -27,4 +27,4 @@ local obsidian_extraction = {
     order = "z[obsidian-extraction]",
     allow_productivity = true,
 }
-return obsidian_extraction
+data:extend({ obsidian_extraction })

@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type = "technology",
     name = "pyroclast-assembly-2",
     icons = {
@@ -25,4 +25,4 @@ return {
     },
     upgrade = true,
     order = "c-a-h[pyroclast-assembly-2]"
-}
+}})

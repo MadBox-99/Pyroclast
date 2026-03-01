@@ -41,4 +41,4 @@ local planet_discovery_pyroclast = {
     essential = true,
     order = "d[planet-discovery-pyroclast]"
 }
-return planet_discovery_pyroclast
+data:extend({ planet_discovery_pyroclast })

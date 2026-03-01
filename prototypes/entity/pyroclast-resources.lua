@@ -82,4 +82,4 @@ if pyroclast_components.stages_effect then
     tint_all_sprites(pyroclast_components.stages_effect, comp_tint)
 end
 
-return { pyroclast_scrap, pyroclast_components }
+data:extend({ pyroclast_scrap, pyroclast_components })

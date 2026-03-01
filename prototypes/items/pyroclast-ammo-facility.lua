@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type         = "item",
     name         = "pyroclast-ammo-facility",
     icon         = "__Pyroclast__/graphics/icons/ammo-facility.png",
@@ -7,4 +7,4 @@ return {
     order        = "d[pyroclast-ammo-facility]",
     place_result = "pyroclast-ammo-facility",
     stack_size   = 5,
-}
+}})

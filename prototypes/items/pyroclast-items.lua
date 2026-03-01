@@ -15,4 +15,4 @@ local obsidian = {
     weight = 2000
 }
 
-return { obsidian }
+data:extend({ obsidian })

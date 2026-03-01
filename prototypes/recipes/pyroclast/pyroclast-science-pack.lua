@@ -31,4 +31,4 @@ local pyroclast_science_pack = {
     order = "a[pyroclast-science-pack]",
     allow_productivity = true,
 }
-return pyroclast_science_pack
+data:extend({ pyroclast_science_pack })

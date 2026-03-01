@@ -1,3 +1,1 @@
-data:extend({
-    require("prototypes.tools.pyroclast-science-pack"),
-})
+require("prototypes.tools.pyroclast-science-pack")

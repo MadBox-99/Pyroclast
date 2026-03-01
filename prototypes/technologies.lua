@@ -1,31 +1,19 @@
-local planet_discovery_pyroclast  = require("prototypes.technologies.planet-discovery-pyroclast")
-local pyroclast_science_pack_tech = require("prototypes.technologies.pyroclast-science-pack")
-local pyroclast_refinery_tech    = require("prototypes.technologies.pyroclast-refinery")
-local pyroclast_materials_tech    = require("prototypes.technologies.pyroclast-materials")
-local pyroclast_explosives_tech   = require("prototypes.technologies.pyroclast-explosives")
-local pyroclast_refined_tech      = require("prototypes.technologies.pyroclast-refined")
-local pyroclast_heavy_expl_tech   = require("prototypes.technologies.pyroclast-heavy-explosives")
-local pyroclast_assembly_1_tech   = require("prototypes.technologies.pyroclast-assembly-1")
-local pyroclast_assembly_2_tech   = require("prototypes.technologies.pyroclast-assembly-2")
-local pyroclast_assembly_3_tech   = require("prototypes.technologies.pyroclast-assembly-3")
-local pyroclast_assembly_4_tech   = require("prototypes.technologies.pyroclast-assembly-4")
-local pyroclast_mpf_tech          = require("prototypes.technologies.pyroclast-mpf")
-local pyroclast_coal_gen_tech     = require("prototypes.technologies.pyroclast-coal-generator")
-local pyroclast_ammo_fac_tech     = require("prototypes.technologies.pyroclast-ammo-facility")
-
-data:extend({
-    planet_discovery_pyroclast,
-    pyroclast_science_pack_tech,
-    pyroclast_refinery_tech,
-    pyroclast_materials_tech,
-    pyroclast_explosives_tech,
-    pyroclast_refined_tech,
-    pyroclast_heavy_expl_tech,
-    pyroclast_assembly_1_tech,
-    pyroclast_assembly_2_tech,
-    pyroclast_assembly_3_tech,
-    pyroclast_assembly_4_tech,
-    pyroclast_mpf_tech,
-    pyroclast_coal_gen_tech,
-    pyroclast_ammo_fac_tech,
-})
+require("prototypes.technologies.planet-discovery-pyroclast")
+require("prototypes.technologies.pyroclast-science-pack")
+require("prototypes.technologies.pyroclast-refinery")
+require("prototypes.technologies.pyroclast-materials")
+require("prototypes.technologies.pyroclast-explosives")
+require("prototypes.technologies.pyroclast-refined")
+require("prototypes.technologies.pyroclast-heavy-explosives")
+require("prototypes.technologies.pyroclast-assembly-1")
+require("prototypes.technologies.pyroclast-assembly-2")
+require("prototypes.technologies.pyroclast-assembly-3")
+require("prototypes.technologies.pyroclast-assembly-4")
+require("prototypes.technologies.pyroclast-mpf")
+require("prototypes.technologies.pyroclast-coal-generator")
+require("prototypes.technologies.pyroclast-ammo-facility")
+require("prototypes.technologies.pyroclast-munitions")
+require("prototypes.technologies.pyroclast-nuclear")
+require("prototypes.technologies.pyroclast-robotics")
+require("prototypes.technologies.pyroclast-radar-tech")
+require("prototypes.technologies.pyroclast-logistics")

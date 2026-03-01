@@ -48,4 +48,4 @@ if acid_lake.transitions_between_transitions then
     tint_sprites(acid_lake.transitions_between_transitions, acid_tint)
 end
 
-return acid_lake
+data:extend({ acid_lake })

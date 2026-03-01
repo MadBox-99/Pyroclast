@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type = "item",
     name = "pyroclast-rocket-silo",
     icons = {
@@ -12,4 +12,4 @@ return {
     order = "z[pyroclast-rocket-silo]",
     stack_size = 1,
     place_result = "pyroclast-rocket-silo",
-}
+}})

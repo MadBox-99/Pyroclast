@@ -38,4 +38,4 @@ local assmat4 = {
     stack_size = 50
 }
 
-return { assmat1, assmat2, assmat3, assmat4 }
+data:extend({ assmat1, assmat2, assmat3, assmat4 })

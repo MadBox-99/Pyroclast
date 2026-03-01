@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type            = "recipe",
     name            = "pyroclast-coal-generator",
     category        = "crafting",
@@ -14,4 +14,4 @@ return {
     results = {
         { type = "item", name = "pyroclast-coal-generator", amount = 1 },
     },
-}
+}})

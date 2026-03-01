@@ -18,4 +18,4 @@ local pyroclast_components = {
     stack_size = 100,
 }
 
-return { pyroclast_scrap, pyroclast_components }
+data:extend({ pyroclast_scrap, pyroclast_components })

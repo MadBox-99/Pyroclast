@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type = "recipe",
     name = "assmat3",
     category = "pyroclast-refining",
@@ -18,4 +18,4 @@ return {
         { type = "item", name = "assmat3", amount = 3 },
     },
     allow_productivity = true,
-}
+}})

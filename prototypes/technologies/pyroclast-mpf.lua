@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type = "technology",
     name = "pyroclast-mpf",
     icons = {
@@ -25,4 +25,4 @@ return {
         time = 60,
     },
     order = "c-a-i[pyroclast-mpf]",
-}
+}})

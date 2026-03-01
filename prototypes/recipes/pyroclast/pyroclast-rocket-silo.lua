@@ -1,4 +1,4 @@
-return {
+data:extend({{
     type = "recipe",
     name = "pyroclast-rocket-silo",
     category = "crafting-with-fluid",
@@ -33,4 +33,4 @@ return {
         },
     },
     allow_productivity = false,
-}
+}})

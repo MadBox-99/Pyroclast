@@ -66,4 +66,4 @@ molten_copper_geyser.minable   = {
 molten_copper_geyser.autoplace = { control = "pyroclast_copper_geyser", order = "c", probability_expression = 0 }
 tint_geyser(molten_copper_geyser, copper_tint)
 
-return { molten_iron_geyser, molten_copper_geyser }
+data:extend({ molten_iron_geyser, molten_copper_geyser })

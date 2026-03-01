@@ -1,18 +1,23 @@
-data:extend({
-    require("prototypes.recipes.pyroclast.obsidian-extraction"),
-    require("prototypes.recipes.pyroclast.pyroclast-science-pack"),
-    require("prototypes.recipes.pyroclast.bmat"),
-    require("prototypes.recipes.pyroclast.cmat"),
-    require("prototypes.recipes.pyroclast.emat"),
-    require("prototypes.recipes.pyroclast.rmat"),
-    require("prototypes.recipes.pyroclast.hemat"),
-    require("prototypes.recipes.pyroclast.assmat1"),
-    require("prototypes.recipes.pyroclast.assmat2"),
-    require("prototypes.recipes.pyroclast.assmat3"),
-    require("prototypes.recipes.pyroclast.assmat4"),
-    require("prototypes.recipes.pyroclast.pyroclast-rocket-silo"),
-    require("prototypes.recipes.pyroclast.pyroclast-refinery"),
-    require("prototypes.recipes.pyroclast.pyroclast-mpf"),
-    require("prototypes.recipes.pyroclast.pyroclast-coal-generator"),
-    require("prototypes.recipes.pyroclast.pyroclast-ammo-facility"),
-})
+require("prototypes.recipes.pyroclast.obsidian-extraction")
+require("prototypes.recipes.pyroclast.pyroclast-science-pack")
+require("prototypes.recipes.pyroclast.bmat")
+require("prototypes.recipes.pyroclast.cmat")
+require("prototypes.recipes.pyroclast.emat")
+require("prototypes.recipes.pyroclast.rmat")
+require("prototypes.recipes.pyroclast.hemat")
+require("prototypes.recipes.pyroclast.assmat1")
+require("prototypes.recipes.pyroclast.assmat2")
+require("prototypes.recipes.pyroclast.assmat3")
+require("prototypes.recipes.pyroclast.assmat4")
+require("prototypes.recipes.pyroclast.pyroclast-rocket-silo")
+require("prototypes.recipes.pyroclast.pyroclast-refinery")
+require("prototypes.recipes.pyroclast.pyroclast-mpf")
+require("prototypes.recipes.pyroclast.pyroclast-coal-generator")
+require("prototypes.recipes.pyroclast.pyroclast-ammo-facility")
+require("prototypes.recipes.pyroclast.pyroclast-artillery-shell")
+require("prototypes.recipes.pyroclast.pyroclast-rocket")
+require("prototypes.recipes.pyroclast.pyroclast-atomic-bomb")
+require("prototypes.recipes.pyroclast.pyroclast-construction-robot")
+require("prototypes.recipes.pyroclast.pyroclast-logistic-robot")
+require("prototypes.recipes.pyroclast.pyroclast-radar")
+require("prototypes.recipes.pyroclast.pyroclast-crates")

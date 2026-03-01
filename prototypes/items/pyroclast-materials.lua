@@ -48,4 +48,4 @@ local hemat = {
     stack_size = 50
 }
 
-return { bmat, cmat, emat, rmat, hemat }
+data:extend({ bmat, cmat, emat, rmat, hemat })

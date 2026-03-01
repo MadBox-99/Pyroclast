@@ -1,7 +1,28 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.6
+Version: 0.1.7
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2026-03-01
+  Features:
+    - Pyroclast-exclusive items: instead of touching base game recipes, we now have dedicated enhanced items that give players a real reason to set up shop on Pyroclast.
+    - Pyroclast Artillery Shell: base artillery shell infused with emat and bmat, +25% range. Requires artillery research.
+    - Pyroclast Rocket: enhanced explosive rocket using emat and assmat1.
+    - Pyroclast Atomic Bomb: supercharged nuke with hemat and assmat3. Requires atomic-bomb research.
+    - Pyroclast Construction Robot: +50% speed, double HP. Built from a base construction robot + assmat2 and rmat.
+    - Pyroclast Logistic Robot: same buffs as construction variant, logistic version.
+    - Pyroclast Radar: doubled scan range, built with rmat and assmat1.
+    - Crate system for all Pyroclast materials (bmat, cmat, emat, rmat, hemat, assmat1-4). Pack on Pyroclast, unpack anywhere. 5x transport density for inter-planetary logistics.
+    - Four new technologies: Pyroclast Munitions, Pyroclast Nuclear Ordnance, Pyroclast Robotics, Pyroclast Radar.
+    - Pyroclast Logistics technology unlocks all crate pack/unpack recipes.
+    - Added Coal Power Plant and Ammo Facility buildings (from previous dev builds).
+  Changes:
+    - Removed all base game recipe modifications. Artillery shells, vehicles, robots etc. keep their vanilla recipes. The old approach caused mod compatibility headaches and forced players into Pyroclast progression whether they wanted it or not.
+    - Assmat materials now have a clear purpose: assmat1 goes into rockets and radar, assmat2 into robots, assmat3 into the atomic bomb. assmat4 is still reserved for the rocket silo.
+    - Technologies now properly require base game prerequisites (e.g. pyroclast-munitions needs artillery + rocketry, pyroclast-nuclear needs atomic-bomb research).
+    - Refactored all prototype files to use data:extend() internally instead of returning tables. Aggregator files are now just simple require() lists. Much cleaner to maintain.
+    - All new items use layered icons (base game icon + small Pyroclast material overlay) instead of separate generated icons.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2026-02-24
@@ -54,6 +75,6 @@ Date: 2026-02-23
       - Hemat (Heavy Explosive Material): powerful military-grade explosive
       - Assembly Materials I-IV: tiered vehicle and robotics components
     - Full technology tree: planet discovery, science pack, materials, explosives, refined materials, heavy explosives, assembly tiers 1-4
-    - Base game recipe modifications: artillery shells, radar, railgun turret, explosive rockets, atomic bomb, nuclear reactor, vehicles, robots use Pyroclast materials
+    - Base game recipe modifications (removed in 0.1.6): artillery shells, radar, railgun turret, explosive rockets, atomic bomb, nuclear reactor, vehicles, robots used Pyroclast materials
     - Custom Pyroclast rocket silo for launching from the planet
     - Works standalone with base + Space Age, or integrates with LavaBlock for extended tech tree
