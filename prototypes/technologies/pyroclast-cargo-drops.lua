@@ -30,6 +30,10 @@ for _, effect in pairs(cargo_drops.effects or {}) do
     end
 end
 
+-- Override PlanetsLib auto-generated locale with our own
+cargo_drops.localised_name = { "technology-name.planetslib-pyroclast-cargo-drops" }
+cargo_drops.localised_description = { "technology-description.planetslib-pyroclast-cargo-drops" }
+
 cargo_drops.prerequisites = { "planet-discovery-pyroclast" }
 cargo_drops.unit = {
     count = 500,

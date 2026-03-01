@@ -2,18 +2,13 @@
 Version: 0.1.7
 Date: ????
   Changes:
----------------------------------------------------------------------------------------------------
-Version: 0.1.7
-Date: ????
-  Features:
-    - Cargo drop restrictions via PlanetsLib: most cargo drops to Pyroclast are blocked until the new "Pyroclast Cargo Drops" technology is researched. Basic logistics (belts, inserters, pipes, power poles, drills, assemblers) can still be dropped for initial base setup.
-    - Recycler permanently blocked on Pyroclast. The extreme pressure (6000) is incompatible with the recycler's operation, preventing players from recycling Pyroclast items back into base game materials.
-  Changes:
-    - Added PlanetsLib as a dependency for cargo drop management.
+    - Added Pyroclast Cargo Drops technology to manage cargo drop restrictions on Pyroclast. Until researched, most cargo drops to Pyroclast are blocked, but basic logistics (belts, inserters, pipes, power poles, drills, assemblers) can still be dropped for initial base setup. This allows players to choose whether they want the challenge of restricted drops or not.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 2026-03-01
   Features:
+    - Cargo drop restrictions via PlanetsLib: most cargo drops to Pyroclast are blocked until the new "Pyroclast Cargo Drops" technology is researched. Basic logistics (belts, inserters, pipes, power poles, drills, assemblers) can still be dropped for initial base setup.
+    - Recycler permanently blocked on Pyroclast. The extreme pressure (6000) is incompatible with the recycler's operation, preventing players from recycling Pyroclast items back into base game materials.
     - Pyroclast-exclusive items: instead of touching base game recipes, we now have dedicated enhanced items that give players a real reason to set up shop on Pyroclast.
     - Pyroclast Artillery Shell: base artillery shell infused with emat and bmat, +25% range. Requires artillery research.
     - Pyroclast Rocket: enhanced explosive rocket using emat and assmat1.
@@ -31,6 +26,7 @@ Date: 2026-03-01
     - Technologies now properly require base game prerequisites (e.g. pyroclast-munitions needs artillery + rocketry, pyroclast-nuclear needs atomic-bomb research).
     - Refactored all prototype files to use data:extend() internally instead of returning tables. Aggregator files are now just simple require() lists. Much cleaner to maintain.
     - All new items use layered icons (base game icon + small Pyroclast material overlay) instead of separate generated icons.
+    - Added PlanetsLib as a dependency for cargo drop management.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2026-02-24
