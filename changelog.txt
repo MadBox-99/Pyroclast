@@ -1,6 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: ????
   Features:
     - Cargo drop restrictions via PlanetsLib: most cargo drops to Pyroclast are blocked until the new "Pyroclast Cargo Drops" technology is researched. Basic logistics (belts, inserters, pipes, power poles, drills, assemblers) can still be dropped for initial base setup.
     - Recycler permanently blocked on Pyroclast. The extreme pressure (6000) is incompatible with the recycler's operation, preventing players from recycling Pyroclast items back into base game materials.
