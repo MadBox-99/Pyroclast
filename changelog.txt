@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
-Date: ????
+Date: 2026-03-01
   Changes:
     - Added Pyroclast Cargo Drops technology to manage cargo drop restrictions on Pyroclast. Until researched, most cargo drops to Pyroclast are blocked, but basic logistics (belts, inserters, pipes, power poles, drills, assemblers) can still be dropped for initial base setup. This allows players to choose whether they want the challenge of restricted drops or not.
 ---------------------------------------------------------------------------------------------------
