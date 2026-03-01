@@ -3,4 +3,5 @@ package-lock.json
 .env
 blender
 /graphics/entity/preview
-generate_icons.py
+__pycache__
+*.pyc
