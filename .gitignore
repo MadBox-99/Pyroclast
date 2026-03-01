@@ -4,4 +4,4 @@ package-lock.json
 blender
 /graphics/entity/preview
 __pycache__
-*.pyc
+*.py
