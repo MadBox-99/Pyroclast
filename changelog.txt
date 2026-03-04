@@ -1,7 +1,21 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: ????
+Date: ???
+  Features:
+    - Pyroclast Factory: new 7x7 general-purpose manufacturing building for producing enhanced equipment. Uses ammo-facility sprites with blue tint as placeholder graphics.
+    - New crafting category: pyroclast-manufacturing. Used by Pyroclast Factory, Ammo Facility, and MPF.
+    - Small Arms category: Pyroclast Firearm Magazine (+50% dmg), Piercing Rounds (+40%), Uranium Rounds (+30%), Shotgun Shell (+50%).
+    - Medical category: Pyroclast Repair Pack (2x durability, 1.5x speed), Pyroclast Defender Capsule (+50% dmg, 2x HP combat robot).
+    - Uniforms category: Pyroclast Modular Armor (7x7 grid), Power Armor (9x9 grid), Power Armor MK2 (12x12 grid), Mech Armor (12x12 grid). All with improved resistances.
+    - Utility category: Pyroclast Grenade (+50% dmg, +25% radius), Pyroclast Cluster Grenade (+40% dmg, +25% radius).
+    - Pyroclast Defender: enhanced combat robot entity spawned by Pyroclast Defender Capsule.
+    - Scrap Recycling: probabilistic recipe to recover iron plate, steel plate, copper plate and calcite from pyroclast-scrap using sulfuric acid. Unlocked by Pyroclast Materials tech.
+    - Five new technologies: Pyroclast Factory, Small Arms, Medical Supplies, Uniforms I & II, Utility Equipment. All require 10 science packs including electromagnetic and pyroclast.
   Changes:
+    - Ammo Facility now uses pyroclast-manufacturing category instead of vanilla crafting categories. No longer able to craft arbitrary vanilla recipes.
+    - Artillery Shell and Atomic Bomb recipes moved to pyroclast-manufacturing category.
+    - Recipe categories moved from inline data.lua declaration to prototypes/recipe-categories.lua for cleaner file structure.
+    - Fixed locale for upgrade technologies (pyroclast-assembly) to use base name format compatible with upgrade = true.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2026-03-01
