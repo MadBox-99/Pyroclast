@@ -1,6 +1,4 @@
--- Recipe category must be declared before any recipe references it
-data:extend({ { type = "recipe-category", name = "pyroclast-refining" } })
-
+require("prototypes.recipe-categories")
 require("prototypes.items")
 require("prototypes.recipes")
 require("prototypes.technologies")
@@ -14,6 +12,8 @@ require("prototypes.entity.pyroclast-refinery")
 require("prototypes.entity.pyroclast-mpf")
 require("prototypes.entity.pyroclast-coal-generator")
 require("prototypes.entity.pyroclast-ammo-facility")
+require("prototypes.entity.pyroclast-factory")
+require("prototypes.entity.pyroclast-defender")
 require("prototypes.entity.pyroclast-robots")
 require("prototypes.entity.pyroclast-radar")
 require("prototypes.autoplace-controls")

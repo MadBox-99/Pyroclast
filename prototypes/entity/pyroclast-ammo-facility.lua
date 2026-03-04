@@ -20,7 +20,7 @@ facility.surface_conditions = {
     { property = "gravity",  min = 60,   max = 60   },
 }
 
-facility.crafting_categories = { "crafting", "advanced-crafting", "crafting-with-fluid" }
+facility.crafting_categories = { "pyroclast-manufacturing" }
 facility.crafting_speed = 3
 facility.map_color = { r = 0.35, g = 0.45, b = 0.25 }
 

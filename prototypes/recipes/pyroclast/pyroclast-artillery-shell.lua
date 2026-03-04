@@ -1,7 +1,7 @@
 data:extend({{
     type = "recipe",
     name = "pyroclast-artillery-shell",
-    category = "crafting-with-fluid",
+    category = "pyroclast-manufacturing",
     enabled = false,
     energy_required = 15,
     surface_conditions = {

@@ -18,6 +18,7 @@ data:extend({{
     effects = {
         { type = "unlock-recipe", recipe = "bmat" },
         { type = "unlock-recipe", recipe = "cmat" },
+        { type = "unlock-recipe", recipe = "pyroclast-scrap-recycling" },
     },
     prerequisites = { "pyroclast-refinery" },
     unit = {
