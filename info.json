@@ -6,8 +6,7 @@
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",
-        "space-age",
-        "PlanetsLib"
+        "space-age"
     ],
     "space_travel_required": true,
     "description": "Pyroclast: a hyper-volcanic world of extreme pressure and heat. Foxhole-style materials, enhanced weapons, robots and radar, crate logistics, and a full technology tree. No base game recipes modified."
