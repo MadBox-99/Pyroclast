@@ -2,6 +2,7 @@
 Version: 0.1.10
 Date: ????
   Changes:
+    - Updated dependency to planetlib no longer need
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 2026-03-16
