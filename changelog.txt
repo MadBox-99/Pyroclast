@@ -2,6 +2,7 @@
 Version: 0.1.9
 Date: ????
   Changes:
+    - Removed Pyroclast Cargo Drops technology and all cargo drop restrictions. All items can now be freely dropped to Pyroclast without needing to research any technology first.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2026-03-04
