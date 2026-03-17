@@ -11,6 +11,9 @@ data:extend({{
     effects = {
         { type = "unlock-recipe", recipe = "rmat" },
         { type = "unlock-recipe", recipe = "pyroclast-plastic" },
+        { type = "unlock-recipe", recipe = "pyroclast-acid-neutralisation" },
+        { type = "unlock-recipe", recipe = "pyroclast-sulfur" },
+        { type = "unlock-recipe", recipe = "pyroclast-heavy-oil" },
     },
     prerequisites = { "pyroclast-materials" },
     unit = {

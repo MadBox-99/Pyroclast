@@ -10,6 +10,7 @@ data:extend({{
     },
     effects = {
         { type = "unlock-recipe", recipe = "hemat" },
+        { type = "unlock-recipe", recipe = "pyroclast-rocket-fuel" },
     },
     prerequisites = { "pyroclast-explosives", "pyroclast-refined" },
     unit = {

@@ -1,23 +1,24 @@
 data:extend({ {
     type = "recipe",
-    name = "pyroclast-plastic",
+    name = "pyroclast-sulfur",
     category = "chemistry",
     enabled = false,
-    energy_required = 10,
+    energy_required = 5,
     surface_conditions = {
         { property = "pressure", min = 6000, max = 6000 },
         { property = "gravity",  min = 60,   max = 60 },
     },
     ingredients = {
-        { type = "item",  name = "obsidian",      amount = 5 },
         { type = "fluid", name = "sulfuric-acid", amount = 100 },
+        { type = "item",  name = "calcite",       amount = 5 },
+        { type = "item",  name = "copper-plate",  amount = 5 },
     },
     results = {
-        { type = "item", name = "plastic-bar", amount = 1 },
+        { type = "item", name = "sulfur", amount = 10 },
     },
     icons = {
         {
-            icon = "__base__/graphics/icons/plastic-bar.png",
+            icon = "__base__/graphics/icons/sulfur.png",
             icon_size = 64,
         },
         {
