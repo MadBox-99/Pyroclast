@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.11
 Date: ????
+  Features:
+    - Pyroclast Plastic: new chemistry recipe to produce plastic bars on Pyroclast. Uses obsidian (5) + sulfuric acid (100) to produce plastic bar (5). Unlocked by Pyroclast Refined technology.
   Changes:
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
