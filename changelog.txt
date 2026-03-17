@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.12
-Date: ????  
+Date: 2026-03-17
   Features:
     - Pyroclast Acid Neutralisation: new chemistry recipe to produce steam (10000 at 500°C) on Pyroclast. Uses calcite (1) + obsidian (2) + sulfuric acid (1000). Slower than the Vulcanus variant (10s vs 5s). Unlocked by Pyroclast Refined technology.
     - Pyroclast Sulfur Extraction: new chemistry recipe to produce sulfur (10) on Pyroclast. Uses sulfuric acid (100) + calcite (5) + copper plate (5). Unlocked by Pyroclast Refined technology.
