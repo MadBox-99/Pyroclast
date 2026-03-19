@@ -2,6 +2,7 @@
 Version: 0.1.14
 Date: ????
   Changes:
+    - Removed pyroclast-science-pack requirement from pyroclast-heavy-explosives technologies. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.13
 Date: 2026-03-19

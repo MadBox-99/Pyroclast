@@ -1,4 +1,4 @@
-data:extend({{
+data:extend({ {
     type = "technology",
     name = "pyroclast-heavy-explosives",
     icons = {
@@ -21,9 +21,8 @@ data:extend({{
             { "chemical-science-pack",    1 },
             { "production-science-pack",  1 },
             { "metallurgic-science-pack", 1 },
-            { "pyroclast-science-pack",   1 },
         },
         time = 45
     },
     order = "c-a-g[pyroclast-heavy-explosives]"
-}})
+} })
