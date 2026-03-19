@@ -1,4 +1,4 @@
-data:extend({{
+data:extend({ {
     type = "technology",
     name = "pyroclast-assembly-4",
     icons = {
@@ -21,10 +21,9 @@ data:extend({{
             { "chemical-science-pack",    1 },
             { "production-science-pack",  1 },
             { "metallurgic-science-pack", 1 },
-            { "pyroclast-science-pack",   1 },
         },
         time = 60
     },
     upgrade = true,
     order = "c-a-h[pyroclast-assembly-4]"
-}})
+} })
