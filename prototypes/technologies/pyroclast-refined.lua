@@ -14,6 +14,7 @@ data:extend({{
         { type = "unlock-recipe", recipe = "pyroclast-acid-neutralisation" },
         { type = "unlock-recipe", recipe = "pyroclast-sulfur" },
         { type = "unlock-recipe", recipe = "pyroclast-heavy-oil" },
+        { type = "unlock-recipe", recipe = "pyroclast-oil-processing" },
     },
     prerequisites = { "pyroclast-materials" },
     unit = {
