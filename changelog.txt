@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.16
-Date: ????
+Date: 2026-03-19
   Features:
     - Added pyroclast-oil-processing recipe (oil-processing category, oil refinery). Coal liquefaction variant using pyroclast-scrap instead of coal. Same ratios/catalyst mechanic as vanilla. Pyroclast surface-locked. Unlocked by pyroclast-refined tech.
   Changes:
