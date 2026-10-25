@@ -3,7 +3,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-repair-pack",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 8,
         surface_conditions = {
@@ -25,7 +25,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-defender-capsule",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 10,
         surface_conditions = {

@@ -6,7 +6,7 @@ local pyroclast_science_pack = {
     name = "pyroclast-science-pack",
     energy_required = 30,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = { "crafting-with-fluid" },
     surface_conditions = {
         { property = "pressure", min = 6000, max = 6000 },
         { property = "gravity",  min = 60,   max = 60   }

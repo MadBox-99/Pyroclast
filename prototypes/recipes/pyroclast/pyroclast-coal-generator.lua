@@ -1,7 +1,7 @@
 data:extend({{
     type            = "recipe",
     name            = "pyroclast-coal-generator",
-    category        = "crafting",
+    categories      = { "crafting" },
     enabled         = false,
     energy_required = 30,
     ingredients = {

@@ -1,7 +1,7 @@
 data:extend({{
     type = "recipe",
     name = "assmat3",
-    category = "pyroclast-refining",
+    categories = { "pyroclast-refining" },
     enabled = false,
     energy_required = 15,
     surface_conditions = {

@@ -1,7 +1,7 @@
 data:extend({{
     type            = "recipe",
     name            = "pyroclast-ammo-facility",
-    category        = "crafting",
+    categories      = { "crafting" },
     enabled         = false,
     energy_required = 45,
     ingredients = {

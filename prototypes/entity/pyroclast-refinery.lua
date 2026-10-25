@@ -32,7 +32,7 @@ refinery.module_slots = 4
 -- Scale up from 5x5 to 7x7
 refinery.collision_box  = {{ -3.4, -3.4 }, { 3.4, 3.4 }}
 refinery.selection_box  = {{ -3.5, -3.5 }, { 3.5, 3.5 }}
-refinery.drawing_box    = {{ -4.0, -4.5 }, { 4.0, 3.5 }}
+refinery.drawing_box_vertical_extension = 1
 
 -- Always show pipe connections (and allow rotation) even without a fluid recipe
 refinery.fluid_boxes_off_when_no_fluid_recipe = false

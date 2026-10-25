@@ -2,7 +2,7 @@ data:extend({ {
     type = "recipe",
     name = "pyroclast-oil-processing",
     icon = "__base__/graphics/icons/fluid/coal-liquefaction.png",
-    category = "oil-processing",
+    categories = { "oil-processing" },
     subgroup = "fluid-recipes",
     order = "a[oil-processing]-e[pyroclast-oil-processing]",
     auto_recycle = false,

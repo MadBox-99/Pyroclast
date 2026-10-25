@@ -1,7 +1,7 @@
 data:extend({ {
     type = "recipe",
     name = "pyroclast-plastic",
-    category = "chemistry",
+    categories = { "chemistry" },
     enabled = false,
     energy_required = 10,
     surface_conditions = {

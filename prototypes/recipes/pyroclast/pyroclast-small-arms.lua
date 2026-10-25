@@ -3,7 +3,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-firearm-magazine",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 5,
         surface_conditions = {
@@ -24,7 +24,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-piercing-rounds-magazine",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 8,
         surface_conditions = {
@@ -46,7 +46,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-uranium-rounds-magazine",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 12,
         surface_conditions = {
@@ -68,7 +68,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-shotgun-shell",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 5,
         surface_conditions = {

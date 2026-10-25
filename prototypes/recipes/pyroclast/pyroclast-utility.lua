@@ -3,7 +3,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-grenade",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 6,
         surface_conditions = {
@@ -25,7 +25,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-cluster-grenade",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 12,
         surface_conditions = {

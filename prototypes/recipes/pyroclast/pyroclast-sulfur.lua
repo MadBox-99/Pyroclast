@@ -1,7 +1,7 @@
 data:extend({ {
     type = "recipe",
     name = "pyroclast-sulfur",
-    category = "chemistry",
+    categories = { "chemistry" },
     enabled = false,
     energy_required = 5,
     surface_conditions = {

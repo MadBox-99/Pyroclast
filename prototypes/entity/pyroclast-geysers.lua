@@ -45,7 +45,7 @@ molten_iron_geyser.map_color = { r = 0.55, g = 0.60, b = 0.70 }
 molten_iron_geyser.minable   = {
     mining_time = 1,
     results = {
-        { type = "fluid", name = "molten-iron", amount_min = 10, amount_max = 10, probability = 1 }
+        { type = "fluid", name = "molten-iron", amount_min = 10, amount_max = 10, independent_probability = 1 }
     }
 }
 molten_iron_geyser.autoplace = { control = "pyroclast_iron_geyser", order = "c", probability_expression = 0 }
@@ -60,7 +60,7 @@ molten_copper_geyser.map_color = { r = 0.85, g = 0.45, b = 0.10 }
 molten_copper_geyser.minable   = {
     mining_time = 1,
     results = {
-        { type = "fluid", name = "molten-copper", amount_min = 10, amount_max = 10, probability = 1 }
+        { type = "fluid", name = "molten-copper", amount_min = 10, amount_max = 10, independent_probability = 1 }
     }
 }
 molten_copper_geyser.autoplace = { control = "pyroclast_copper_geyser", order = "c", probability_expression = 0 }

@@ -1,7 +1,7 @@
 data:extend({{
     type            = "recipe",
     name            = "pyroclast-refinery",
-    category        = "crafting-with-fluid",
+    categories      = { "crafting-with-fluid" },
     enabled         = false,
     energy_required = 45,
     ingredients = {

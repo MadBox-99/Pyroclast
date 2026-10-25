@@ -1,7 +1,7 @@
 data:extend({{
     type = "recipe",
     name = "pyroclast-atomic-bomb",
-    category = "pyroclast-manufacturing",
+    categories = { "pyroclast-manufacturing" },
     enabled = false,
     energy_required = 30,
     surface_conditions = {

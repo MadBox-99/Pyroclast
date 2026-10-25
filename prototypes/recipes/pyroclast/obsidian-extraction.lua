@@ -5,7 +5,7 @@ local obsidian_extraction = {
     name = "obsidian-extraction",
     energy_required = 10,
     enabled = false,
-    category = "chemistry",
+    categories = { "chemistry" },
     surface_conditions = {
         { property = "pressure", min = 6000, max = 6000 },
         { property = "gravity",  min = 60,   max = 60   }

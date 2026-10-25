@@ -2,7 +2,7 @@ data:extend({ {
     type = "recipe",
     name = "pyroclast-acid-neutralisation",
     icon = "__space-age__/graphics/icons/fluid/acid-neutralisation.png",
-    category = "chemistry-or-cryogenics",
+    categories = { "chemistry", "cryogenics" },
     subgroup = "fluid-recipes",
     order = "d[other-chemistry]-b[pyroclast-acid-neutralisation]",
     auto_recycle = false,
@@ -21,7 +21,5 @@ data:extend({ {
         { type = "fluid", name = "steam", amount = 10000, temperature = 500 },
     },
     allow_productivity = false,
-    always_show_products = true,
-    show_amount_in_title = false,
     allow_decomposition = false,
 } })

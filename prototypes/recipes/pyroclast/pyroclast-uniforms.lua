@@ -3,7 +3,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-modular-armor",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 25,
         surface_conditions = {
@@ -25,7 +25,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-power-armor",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 40,
         surface_conditions = {
@@ -47,7 +47,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-power-armor-mk2",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 60,
         surface_conditions = {
@@ -69,7 +69,7 @@ data:extend({
     {
         type = "recipe",
         name = "pyroclast-mech-armor",
-        category = "pyroclast-manufacturing",
+        categories = { "pyroclast-manufacturing" },
         enabled = false,
         energy_required = 60,
         surface_conditions = {

@@ -1,7 +1,7 @@
 data:extend({{
     type = "recipe",
     name = "rmat",
-    category = "pyroclast-refining",
+    categories = { "pyroclast-refining" },
     enabled = false,
     energy_required = 12,
     surface_conditions = {
