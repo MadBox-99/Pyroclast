@@ -2,6 +2,8 @@
 Version: 0.1.18
 Date: ????
   Changes:
+    - Moved the crate system into a separate mod, Pyroclast Crates. The nine crated material items, their 18 pack/unpack recipes and the Pyroclast Logistics technology now ship there.
+    - Install Pyroclast Crates alongside this update to keep crates and research in existing saves; prototype names are unchanged. Updating without it removes them.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 2026-03-19
