@@ -23,7 +23,7 @@ mpf.surface_conditions     = {
 
 mpf.crafting_categories    = { "pyroclast-refining", "pyroclast-manufacturing" }
 mpf.crafting_speed         = 2
-mpf.base_productivity      = 0.5 -- +50% free output
+mpf.effect_receiver        = { base_effect = { productivity = 0.5 } } -- +50% free output
 mpf.map_color              = { r = 0.50, g = 0.20, b = 0.10 }
 
 -- Scale up from 5x5 to 11x11

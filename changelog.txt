@@ -7,6 +7,7 @@ Date: ????
     - Install Pyroclast Crates alongside this update to keep crates and research in existing saves; prototype names are unchanged. Updating without it removes them.
   Bugfixes:
     - The Pyroclast Factory's and the Pyroclast Ammo Facility's pipe connections sat a tile and a third inside the building, so a pipe placed against it never connected and no fluid got in. They are on the building's edge now.
+    - The Mass Production Factory's +50% built-in productivity never applied: it was set the Factorio 1.1 way, which 2.0 ignores. It applies now, as the Pyroclast Refinery's +150% always did.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 2026-03-19
