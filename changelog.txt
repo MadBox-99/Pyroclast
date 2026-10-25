@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
-Date: ????
+Date: 2026-10-25
   Changes:
     - Updated to Factorio 2.1. This version needs Factorio 2.1; the 0.1 versions stay the ones for Factorio 2.0.
     - Moved the crate system into a separate mod, Pyroclast Crates. The nine crated material items, their 18 pack/unpack recipes and the Pyroclast Logistics technology now ship there.
