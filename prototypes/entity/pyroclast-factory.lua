@@ -3,7 +3,9 @@
 -- Deepcopied from assembling-machine-3 and scaled up to 7x7.
 -- Only placeable on Pyroclast (surface_conditions).
 
-local SCALE = 7 / 3  -- 2.33x scale factor (3x3 -> 7x7)
+-- Pipe connections sit on the edge tiles: +-1 on the 3x3, +-3 on the 7x7.
+-- (7 / 3 put them at +-2.33, inside the building, where no pipe reached.)
+local SCALE = 3
 
 local factory = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
 factory.name         = "pyroclast-factory"
